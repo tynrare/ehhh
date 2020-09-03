@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+        "checkJs": true
+    },
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "esnext",
+        "baseUrl": ".",
+        "paths": {
+            "@src/*":  ["./src/*"],
+            "@core/*":  ["./src/core/*"],
+            "@lib/*":  ["./src/lib/*"],
+            "@rooms/*":  ["./src/rooms/*"],
+            "@client/*":  ["./src/client/*"]
+        },
+        "resolveJsonModule": true,
+        "disableSizeLimit": true,
+        "allowUmdGlobalAccess": true
+    },
+    "include": [
+        "./src/**/*",
+        "./lib/**/*",
+        "./dev/workspace/*.d.ts"
+    ],
+    "exclude": ["node_modules"]
+}
