@@ -16,7 +16,6 @@ import { Thingy } from '@core/exchange/index.js';
 const cases = {
 	Hilo3d: require('./hilo3d/room.js'),
 	EhhhBoard: require('./ehhh-board/room.js'),
-	Private: require('./private/room.js'),
 	//ModularWindowTest: require('@test/manual/modular_window.mtest.js'),
 	//AppThingyMinimalTest: require('@test/manual/app_thingy_minimal.mtest.js'),
 	//HiloLineDrawTest: require('@test/manual/hilo_line_draw.mtest.js'),

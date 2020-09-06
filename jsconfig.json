@@ -8,10 +8,10 @@
         "baseUrl": ".",
         "paths": {
             "@src/*":  ["./src/*"],
-            "@core/*":  ["./src/core/*"],
-            "@lib/*":  ["./src/lib/*"],
+            "@core/*":  ["./src/framework/core/*"],
+            "@lib/*":  ["./src/framework/lib/*"],
             "@rooms/*":  ["./src/rooms/*"],
-            "@client/*":  ["./src/client/*"]
+            "@client/*":  ["./src/framework/client/*"]
         },
         "resolveJsonModule": true,
         "disableSizeLimit": true,

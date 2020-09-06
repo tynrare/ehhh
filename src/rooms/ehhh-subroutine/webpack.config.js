@@ -12,10 +12,10 @@ module.exports = {
 		modules: ['src', 'node_modules', path.resolve(__dirname)],
 		alias: {
 			'@src': path.resolve('./src'),
-			'@core': path.resolve('./src/core'),
-			'@lib': path.resolve('./src/lib'),
+			'@core': path.resolve('./src/framework/core'),
+			'@lib': path.resolve('./src/framework/lib'),
 			'@rooms': path.resolve('./src/rooms'),
-			'@client': path.resolve('./src/client')
+			'@client': path.resolve('./src/framework/client')
 		}
 	},
 	output: {

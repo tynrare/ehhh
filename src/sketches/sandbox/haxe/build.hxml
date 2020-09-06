@@ -1,0 +1,4 @@
+--js main-javascript.js
+-D js-es=6
+-cp .
+-dce full

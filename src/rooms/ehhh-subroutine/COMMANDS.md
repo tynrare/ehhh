@@ -4,7 +4,8 @@ Select one of build commands below:
 
 # Commands
 
-- [/src/rooms](?subroutine=rooms). Rooms (playground).
+- [/src/sketches](?subroutine=sketches). Sketches (aka playground).
+- [/src/rooms](?subroutine=rooms). Rooms. Independet code blocks
 - [/src](?subroutine=src). Root project entry point. Same as 'rooms' for now
 
 *todo*:

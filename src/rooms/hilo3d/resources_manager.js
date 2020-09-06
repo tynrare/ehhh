@@ -23,7 +23,8 @@ class ResourcesManager extends Thingy {
 	 */
 	getDefaultProperties() {
 		return {
-			locations: res
+			locations: res,
+			gltfLoader: new GLTFLoader()
 		};
 	}
 
@@ -47,8 +48,6 @@ class ResourcesManager extends Thingy {
 	 * @returns {Promise<void>} loading promise
 	 */
 	preload(locations = this.properties.locations) {
-		this.touch('gltfLoader', () => new GLTFLoader());
-
 		this.properties.locations = locations;
 
 		return this.preloadMeshes(this.properties.locations.meshes);

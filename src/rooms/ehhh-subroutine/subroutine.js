@@ -14,19 +14,24 @@ class RoomsSubroutine extends Thingy {
 
 		const urlParams = new URLSearchParams(window.location.search);
 
+		document.getElementById('dev-subroutine-commands').style.display = 'none';
 		const name = urlParams.get('subroutine');
+		
 		switch (name) {
 			case 'src':
 				require('@src/subroutine.js');
-
-				document.getElementById('dev-subroutine-commands').style.display = 'none';
+				break;
+			case 'sketches':
+				require('@src/sketches/subroutine.js');
 				break;
 			case 'rooms':
 				require('@src/rooms/subroutine.js');
-
-				document.getElementById('dev-subroutine-commands').style.display = 'none';
+				break;
+			case 'utests':
+				require('@src/rooms/utests/subroutine.js');
 				break;
 			default:
+				document.getElementById('dev-subroutine-commands').style.display = 'unset';
 				document.getElementById('dev-subroutine-commands').innerHTML = commands;
 				document.getElementById('dev-subroutine-commands').innerHTML += readme;
 		}

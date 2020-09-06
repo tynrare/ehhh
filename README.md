@@ -1,3 +1,11 @@
+# General
+
+v0.verylow
+
+My ongoing attempt to simplify web development. All my web code also will be live here.
+
+Simple webpack dev server and folder/code strucrure for now.
+
 # Launch
 
 ## Preinstall
@@ -29,7 +37,7 @@
 You can `imprort` this from JS code:
 
 - `.js` webpack-parsed JS code with babel processing
-- `.hx` haxe code
+- `.hx` haxe code (Not for now)
 - `.md` markdown. Will be parsed into HTML
 
 ## Get and run
@@ -45,24 +53,11 @@ And than copy and run template:
 - `npm watch`
 
 ```
-degit tynrare/webpack-template my-new-project
-cd my-new-project
-npm install
-npm run
-manual-test-watch
+degit tynrare/ehhh my-new-ehhh
+cd my-new-ehhh
+haxe install.hxml
+haxe subroutine.hxml
 ```
-
-### Builds
-
-all builds lays in ./dist folder
-
-`npm run build-prod` builds in production mode with minification, without source maps.
-`npm run build-dev` builds with source maps
-`npm run manual-test-build` builds manual tests with source maps
-
-### Docs
-
-`npm run docs` builds jsdoc docs. You can find it in ./docs folder
 
 # Glossary
 

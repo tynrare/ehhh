@@ -10,7 +10,3 @@
 - [ehhh board](#EhhhBoard)
 
 ## other
-
-Use this folder *(/src/rooms/private)* for any personal code
-
-- [private](#Private)

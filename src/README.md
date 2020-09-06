@@ -8,10 +8,24 @@
 import '@rooms/subroutine.js'; // will launch rooms environment
 ```
 
-# core
+# Folders
 
-./core all general logic
+## ./framework
 
-# rooms
+General logic shared between any projects
 
-./rooms environment playgrounds, local tests, specific logic sources
+### ./framework/core
+
+Basic logic
+
+### ./framework/lib
+
+Copied logic
+
+## ./rooms
+
+Independent code blocks such 3d engine invironments or this project builders
+
+## ./sketches
+
+Loose code
