@@ -1,8 +1,8 @@
 # General
 
-v0.verylow
+`v0.verylow`
 
-My ongoing attempt to simplify web development. All my web code also will be live here.
+My ongoing attempt to simplify web development. All my web code will also live here.
 
 Simple webpack dev server and folder/code strucrure for now.
 
@@ -47,10 +47,6 @@ You can `imprort` this from JS code:
 `npm install -g degit`
 
 And than copy and run template:
-
-## npm
-
-- `npm watch`
 
 ```
 degit tynrare/ehhh my-new-ehhh

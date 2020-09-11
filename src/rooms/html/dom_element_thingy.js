@@ -22,6 +22,15 @@ import { Thingy } from '@core/exchange/index.js';
  */
 class DomElementThingy extends Thingy {
 	/**
+	 * @override
+	 */
+	getDefaultProperties() {
+		return {
+			parentId: 'ehhh-app-content-root'
+		};
+	}
+
+	/**
 	 * Creates page dom. div by default
 	 */
 	preinitCallback() {

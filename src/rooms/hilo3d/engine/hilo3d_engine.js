@@ -30,10 +30,11 @@ class Hilo3dEngineThingy extends Thingy {
 	 * @listens window#onresize
 	 */
 	preinitCallback() {
-		const clearColor = cgn.appearance.getColor('background');
+		const clearColor = cgn.appearance.getColor('first');
 		const stage = new Stage({
 			container: this.path('/div').get('div'),
-			clearColor,
+			clearColor: new Color(0, 0, 0, 0),
+			alpha: true,
 			width: innerWidth,
 			height: innerHeight,
 			fog: new Fog({
@@ -58,6 +59,7 @@ class Hilo3dEngineThingy extends Thingy {
 		//this.renderer = this.world.renderer;
 		//this.gl = this.renderer.gl;
 		this.set('canvas', stage.canvas);
+		//stage.canvas.style.backgroundImage = `background-image: radial-gradient(circle, ${cgn.appearance.get('background')}, ${cgn.appearance.get('dark')});`
 		//this.canvas = this.world.canvas;
 		// this.renderer.useInstanced = true;
 

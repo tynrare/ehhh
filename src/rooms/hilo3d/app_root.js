@@ -39,7 +39,7 @@ class AppRoot extends Thingy {
 	getDefaultProperties() {
 		return {
 			strictInit: true,
-			div: new DomElementThingy({ id: 'app-content-root' }),
+			div: new DomElementThingy({ id: 'hilo3d-room-content' }),
 			//page: new PageManager({ dom: new DomElementThingy({ parentId: 'app-root' }) }),
 			resources: new ResourcesManager(), // #order 1
 			render: new Hilo3dEngineThingy(), // #order 2

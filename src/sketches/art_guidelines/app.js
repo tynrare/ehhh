@@ -20,8 +20,13 @@ class ArtGuidelinesDraft extends Thingy {
 		this.app = new AppRoot();
 		this.app.resources.preloadMeshes({ head: '/res/assets/meshes/art-head.glb' }).then(() => {
 			this.app.init();
-			this.app.get('game').touch('env', () => new DefaultDevHiloEnvMap());
-			this.app.get('game').touch('mesh', () => new HiloMeshThingy({ name: 'sphere' }));
+			//this.app.get('game').touch('env', () => new DefaultDevHiloEnvMap());
+			this.app.get('game').touch('cube-bounds', () => new HiloMeshThingy({ name: 'cube-bounds' }));
+			this.app.get('game').touch('cube-back', () => new HiloMeshThingy({ name: 'cube-back' }));
+			this.app.get('game').touch('head', () => new HiloMeshThingy({ name: 'head-smooth' }));
+			this.app.get('game').touch('lines', () => new HiloMeshThingy({ name: 'head-lines' }));
+			//this.app.get('game').touch('mesh3', () => new HiloMeshThingy({ name: 'head-lowpoly' }));
+			//this.app.get('game').touch('mesh4', () => new HiloMeshThingy({ name: 'sphere-smooth' }));
 		});
 	}
 
