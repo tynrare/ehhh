@@ -1,0 +1,21 @@
+{
+  "name": "gulp-sandbox-tmp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "watch": "gulp"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.12",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.7.0",
+    "gulp-connect-php": "^1.0.3",
+    "gulp-less": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.5"
+  }
+}
