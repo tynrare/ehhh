@@ -5,6 +5,8 @@
  */
 class Subroutine {
 	static public function main():Void {
-		Sys.command("npm", ["run", "watch"]);
+		Sys.putEnv('DEBUG', 'subroutine:*');
+		Sys.putEnv('PORT', '8000');
+		Sys.command("npm", ['start']);
 	}
 }

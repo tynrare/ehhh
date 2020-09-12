@@ -1,1 +1,3 @@
-console.log(123);
+import T from './module.js';
+
+console.log(T);

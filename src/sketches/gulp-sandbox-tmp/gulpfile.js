@@ -26,9 +26,9 @@ function css(cb) {
 	cb();
 }
 
-function javascript(cb) {
-	gulp
-		.src('src/**/*.js')
+function javascript() {
+	return gulp
+		.src('src/index.js')
 		.pipe(sourcemaps.init())
 		.pipe(
 			babel({
@@ -38,8 +38,6 @@ function javascript(cb) {
 		.pipe(concat('index.js'))
 		.pipe(sourcemaps.write('.'))
 		.pipe(gulp.dest('dist'));
-
-	cb();
 }
 
 function html(cb) {
@@ -65,4 +63,4 @@ function watch(cb) {
 	cb();
 }
 
-exports.default = gulp.parallel(build, watch);
+exports.default = gulp.series(build, watch);
