@@ -5,6 +5,8 @@ const nunjucks = require('nunjucks');
 const remark = require('remark');
 const html = require('remark-html');
 
+const { getEhhhRootPath } = require('../src/ehhh.js');
+
 /**
  * @param {String} path path to md file
  * @returns {Promise<String>} html string
@@ -64,7 +66,7 @@ function MdExtension() {
 	};
 
 	this.run = function (context, url, body, errorBody, callback) {
-		md(path.join(__dirname, url))
+		md(path.join(getEhhhRootPath(), url))
 			.then((html) => {
 				callback(null, new nunjucks.runtime.SafeString(`<div>${html}</div>`));
 			})
@@ -79,6 +81,7 @@ module.exports = function (app) {
 	app.set('views', __dirname);
 	app.set('view engine', 'njk');
 
+	/*
 	app.engine('md', function (path, options, fn) {
 		md(path)
 			.then((html) => {
@@ -86,6 +89,7 @@ module.exports = function (app) {
 			})
 			.catch(fn);
 	});
+	*/
 
 	const env = nunjucks.configure('views', {
 		autoescape: true,

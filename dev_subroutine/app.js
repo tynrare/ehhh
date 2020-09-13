@@ -10,6 +10,8 @@ var engines = require('./views/engines.js');
 var indexRouter = require('./routes/index');
 var sandboxRouter = require('./routes/sandbox');
 
+const { getEhhhRootPath } = require('./src/ehhh.js');
+
 var app = express();
 
 // view engine setup
@@ -21,6 +23,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(lessMiddleware(path.join(__dirname, 'public'), { dest: path.join(__dirname, 'dest') }));
 app.use(express.static(path.join(__dirname, 'public')));
+app.use('/ehhh', express.static(getEhhhRootPath()));
 
 app.use('/', indexRouter);
 app.use('/sandbox', sandboxRouter);

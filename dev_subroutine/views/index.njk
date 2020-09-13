@@ -9,10 +9,17 @@
 		/>
   </head>
   <body>
-		{% md "index.md" %}
+		{% md "dev_subroutine/COMMANDS.md" %}
+		{% endmd %}
+
+		<hr>
+		{% md "dev_subroutine/README.md" %}
 			This content will be replaced with the content from index.md
 		{% error %}
 			There was an error fetching index.md
 		{% endmd %}
+
+		<hr>
+		EHHH_ROOT: {{ EHHH_ROOT }}
   </body>
 </html>
