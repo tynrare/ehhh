@@ -6,7 +6,8 @@
     "postinstall": "npm install --prefix dev_subroutine",
     "start": "npm start --prefix dev_subroutine"
   },
-  "dependencies": {},
-  "devDependencies": {
-  }
+  "dependencies": {
+    "hilo3d": "^1.15.10-alpha.3"
+  },
+  "devDependencies": {}
 }

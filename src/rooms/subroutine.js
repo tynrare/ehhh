@@ -8,7 +8,6 @@
 /* eslint-disable global-require, camelcase, max-len, max-statements */
 
 // #draft scope
-import commands from './COMMANDS.md';
 import cgn from '@core/core_namespace.js';
 
 import { Thingy } from '@core/exchange/index.js';
@@ -16,6 +15,7 @@ import { Thingy } from '@core/exchange/index.js';
 const cases = {
 	Hilo3d: require('./hilo3d/room.js'),
 	EhhhBoard: require('./ehhh-board/room.js'),
+	ArtGuidelines: require('./sketches/art_guidelines/app.js')
 	//ModularWindowTest: require('@test/manual/modular_window.mtest.js'),
 	//AppThingyMinimalTest: require('@test/manual/app_thingy_minimal.mtest.js'),
 	//HiloLineDrawTest: require('@test/manual/hilo_line_draw.mtest.js'),
@@ -56,15 +56,16 @@ class RoomsSubroutine extends Thingy {
 		const h = window.location.hash.substr(1);
 
 		this.del('active');
+		document.getElementById('ehhh-app-content-root').innerHTML = '';
 
 		if (h.length > 0) {
-			document.getElementById('ehhh-app-content-root').innerHTML = '';
+			document.getElementById('dev-subroutine-commands').style.display = 'none';
 
 			const Case = cases[h].default;
 
 			this.set('active', new Case());
 		} else {
-			document.getElementById('ehhh-app-content-root').innerHTML = commands;
+			document.getElementById('dev-subroutine-commands').style.display = 'unset';
 		}
 	}
 }

@@ -9,4 +9,10 @@
 
 - [ehhh board](#EhhhBoard)
 
+## art guidlines
+
+- [Art guidlines](#ArtGuidelines)
+
+[![](res/maintenance/rooms-pics/art-guidelines.png)](#ArtGuidelines)
+
 ## other

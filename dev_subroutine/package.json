@@ -4,9 +4,11 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "build": "webpack ../src/rooms/subroutine.js --config ./src/webpack/webpack.config.js"
+    "build": "webpack ../src/rooms/subroutine.js --config ./src/webpack/webpack.config.js",
+    "watch": "webpack ../src/rooms/subroutine.js --watch --config ./src/webpack/webpack.config.js"
   },
   "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "express": "~4.16.1",

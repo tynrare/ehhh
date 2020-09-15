@@ -1,2 +1,0 @@
-- Эмоджи - https://emoji-css.afeld.me/
-- Шрифт - https://fonts.google.com/specimen/Nunito

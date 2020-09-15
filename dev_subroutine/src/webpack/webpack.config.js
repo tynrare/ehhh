@@ -10,7 +10,7 @@ module.exports = {
 	module: modules,
 	resolve: {
 		extensions: ['.js'],
-		modules: [root, 'src', 'node_modules'],
+		modules: [root, 'node_modules', path.join(root, 'node_modules')],
 		alias: {
 			'@src': path.join(root, 'src'),
 			'@core': path.join(root, 'src/framework/core'),
@@ -21,6 +21,6 @@ module.exports = {
 	},
 	output: {
 		filename: 'bundle.js',
-		path: path.resolve(process.cwd(), 'dest/app')
+		path: path.resolve(root, 'dest/app')
 	}
 };
