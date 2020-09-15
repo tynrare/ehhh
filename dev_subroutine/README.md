@@ -8,10 +8,14 @@ Use `haxe subroutine.hxml` from root folder to run dev environment.
 
 ## Paths
 
+### Static
+
 | {EHHH_ROOT} relative     | dev server route | JS code |
 | :----------------------- | :--------------: | ------: |
 | `/`                      |     `/ehhh`      |     `-` |
 | `/dev_subroutine/public` |       `/`        |     `-` |
+| `/dev_subroutine/dest`   |       `/`        |     `-` |
+| `/res`                   |      `/res`      |     `-` |
 
 ## Server enabled features
 

@@ -1,3 +1,3 @@
 # Ehhh subroutine commands
 
-- [root](/ehhh/README.md)
+## [Rooms](/rooms)

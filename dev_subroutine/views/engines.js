@@ -78,8 +78,16 @@ function MdExtension() {
  * @param {Express} app .
  */
 module.exports = function (app) {
-	app.set('views', __dirname);
+	const views = [__dirname, getEhhhRootPath()];
+	app.set('views', views);
 	app.set('view engine', 'njk');
+
+	const env = nunjucks.configure(views, {
+		autoescape: true,
+		express: app
+	});
+
+	env.addExtension('MdExtension', new MdExtension());
 
 	/*
 	app.engine('md', function (path, options, fn) {
@@ -91,10 +99,4 @@ module.exports = function (app) {
 	});
 	*/
 
-	const env = nunjucks.configure('views', {
-		autoescape: true,
-		express: app
-	});
-
-	env.addExtension('MdExtension', new MdExtension());
 };
