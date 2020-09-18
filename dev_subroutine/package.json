@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www",
+    "start": "node ./bin/subroutine.js",
     "build": "webpack ../src/rooms/subroutine.js --config ./src/webpack/webpack.config.js",
     "watch": "webpack ../src/rooms/subroutine.js --watch --config ./src/webpack/webpack.config.js"
   },
