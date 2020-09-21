@@ -1,0 +1,15 @@
+{% extends "src/rooms/views/base.njk" %}
+
+{% block devcontent %}
+{% md "src/rooms/sketches/speedruns/COMMANDS.md" %}{% endmd %}
+	<details open="">
+		<summary>log</summary>
+		<p>
+		{% md "src/rooms/sketches/speedruns/a/LOG.md" %}{% endmd %}
+		</p>
+	</details>
+{% endblock %}
+
+{% block appcontent %}
+{% include "src/rooms/sketches/speedruns/a/room.njk" %}
+{% endblock %}

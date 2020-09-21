@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ title }}</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/gh/kognise/water.css@latest/dist/dark.min.css"
+		/>
+		{% block pagehead %}{% endblock %}
+  </head>
+  <body>
+  <body>
+		<div id="dev-subroutine-content-root">
+			{% block devcontent %}{% endblock %}
+		</div>
+		<div id="ehhh-app-content-root">
+			{% block appcontent %}{% endblock %}
+		</div>
+	</body>
+	<script type="text/javascript" src="/app/bundle.js"></script>
+  </body>
+</html>

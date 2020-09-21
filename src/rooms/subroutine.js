@@ -17,6 +17,7 @@ const cases = {
 	EhhhBoard: require('./ehhh-board/room.js'),
 	ArtGuidelines: require('./sketches/art_guidelines/app.js'),
 	Sandbox: require('./sketches/sandbox/app.js'),
+	SpeedrunA: require('./sketches/speedruns/a/room.js')
 	//ModularWindowTest: require('@test/manual/modular_window.mtest.js'),
 	//AppThingyMinimalTest: require('@test/manual/app_thingy_minimal.mtest.js'),
 	//HiloLineDrawTest: require('@test/manual/hilo_line_draw.mtest.js'),
@@ -57,16 +58,20 @@ class RoomsSubroutine extends Thingy {
 		const h = window.location.hash.substr(1);
 
 		this.del('active');
-		document.getElementById('ehhh-app-content-root').innerHTML = '';
+		//23:14:12 ломаю для стрима пока
+		//document.getElementById('ehhh-app-content-root').innerHTML = '';
 
 		if (h.length > 0) {
-			document.getElementById('dev-subroutine-commands').style.display = 'none';
+			// #todo: перетащить внутрь темплейта
+			document.getElementById('dev-subroutine-content-root').style.display = 'none';
+			document.getElementById('ehhh-app-content-root').style.display = 'unset';
 
 			const Case = cases[h].default;
 
 			this.set('active', new Case());
 		} else {
-			document.getElementById('dev-subroutine-commands').style.display = 'unset';
+			document.getElementById('dev-subroutine-content-root').style.display = 'unset';
+			document.getElementById('ehhh-app-content-root').style.display = 'none';
 		}
 	}
 }

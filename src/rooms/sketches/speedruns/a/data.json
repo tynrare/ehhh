@@ -1,0 +1,19 @@
+{
+	"Genre": [
+		"Action",
+		"Adventure",
+		"Fighting",
+		"Platform",
+		"Puzzle",
+		"Racing",
+		"Role-playing",
+		"Shooter",
+		"Simulation",
+		"Sports",
+		"Strategy",
+		"Misc"
+	],
+	"View": ["Text", "2D", "3D"],
+	"Graphics": ["2D", "3D"],
+	"Engine": ["any"]
+}

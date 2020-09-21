@@ -7,6 +7,7 @@
     "start": "npm start --prefix dev_subroutine"
   },
   "dependencies": {
+    "alea": "^1.0.0",
     "hilo3d": "^1.15.10-alpha.3"
   },
   "devDependencies": {}

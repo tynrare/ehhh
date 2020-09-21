@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<style>
+.appear-anim {
+	padding-left: 10em;
+	opacity: 0;
+	animation-name: appear;
+	animation-duration: 0.3s;
+	animation-fill-mode: forwards;
+}
+@keyframes appear {
+  from {
+		opacity: 0;
+    padding-left: 10em
+  }
+  to {
+		opacity: 1;
+    padding-left: 0em
+  }
+}
+</style>
+
+<div id='speedrun-a-content'>
+	<details>
+		<summary>Controls</summary>
+
+		Seed: <input id="speedrun-a-seed-input" type="value" value="0">
+		Source: <input id="speedrun-a-source-input" value="https://pastebin.com/raw/48XxXi5P">
+	</details>
+	<hr>
+
+	<button id='speedrun-a-button-generate'>Generate</button>
+
+	<H1>Results</H1>
+	<div id='speedrun-a-data-root'>...</div>
+</div>

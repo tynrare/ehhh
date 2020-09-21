@@ -1,12 +1,6 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>{{ title }}</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-		<link
-			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/gh/kognise/water.css@latest/dist/dark.min.css"
-		/>
+{% extends "src/rooms/views/base.njk" %}
+
+{% block pagehead %}
 		<style>
 			body {
 				background: #101515;
@@ -25,15 +19,8 @@
 				background-image: radial-gradient(circle, #293b49, #041528);
 			}
 		</style>
-  </head>
-  <body>
-  <body>
-		<div id="dev-subroutine-commands">
-			{% md "src/rooms/COMMANDS.md" %}
-			{% endmd %}
-		</div>
-		<div id="ehhh-app-content-root"></div>
-	</body>
-	<script type="text/javascript" src="/app/bundle.js"></script>
-  </body>
-</html>
+{% endblock %}
+
+{% block devcontent %}
+{% md "src/rooms/COMMANDS.md" %}{% endmd %}
+{% endblock %}
