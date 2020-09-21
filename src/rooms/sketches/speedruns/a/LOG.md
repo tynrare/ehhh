@@ -2,7 +2,7 @@
 
 Mon Sep 21 09:00:14 PM MSK 2020
 
-|   time   |             a             |                 b                  |                                  c                                  |                          x                          |                        z                         |
+|   time   |          вокруг           |               стрим                |                                код 1                                |                        код 2                        |                      код 3                       |
 | :------: | :-----------------------: | :--------------------------------: | :-----------------------------------------------------------------: | :-------------------------------------------------: | :----------------------------------------------: |
 | 21:00:32 |        подготовка         |                                    |                                                                     |                                                     |                                                  |
 | 21:05:57 |                           |  настроил стартовую конфигурацию   |                                                                     |                                                     |                                                  |
@@ -43,15 +43,17 @@ Mon Sep 21 09:00:14 PM MSK 2020
 | 01:37:37 |                           |                                    |                       работает по [ссылке][5]                       |                                                     |                                                  |
 | 01:37:47 |                           |                                    |                                                                     |                Подвожу итоги, тещуу                 |                                                  |
 | 01:41:32 |      усе на сегодня       |                                    |                                                                     |                                                     |                                                  |
+| 01:47:14 |     теперь точно усе      |                                    |            [net link][5],[local link][6],[data link][3]             |                                                     |                                                  |
 |          |                           |                                    |                                                                     |                                                     |                                                  |
-
-Tue Sep 22 01:42:58 AM MSK 2020
 
 [1]: /rooms/speedruns/
 [2]: https://github.com/davidbau/seedrandom#other-fast-prng-algorithms
 [3]: https://pastebin.com/raw/48XxXi5P
 [4]: http://www.tynrare.net/apps/projects/speedrun-theme-gen/
 [5]: http://www.tynrare.net/apps/projects/speedrun-theme-gen/#SpeedrunA
+[6]: http://localhost:8000/rooms/speedruns/#SpeedrunA
+
+Tue Sep 22 01:42:58 AM MSK 2020
 
 # Summary
 
